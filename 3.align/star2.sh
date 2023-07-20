@@ -31,6 +31,7 @@ echo "start first-pass"
 --outFilterScoreMinOverLread 0.33 \
 --sjdbOverhang 100 \
 --twopass1readsN -1 \
+--twopassMode Basic
 --outSAMstrandField intronMotif \
 --outSAMtype None \
 --outSAMmode None
