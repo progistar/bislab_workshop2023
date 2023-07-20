@@ -65,3 +65,12 @@ samtools index final_BTS_Aligned.out.sorted.dup.split.RG.bam
 --filter-expression "MQ < 40.0" --filter-name "MQ40" \
 --filter-expression "MQRankSum < -12.5" --filter-name "MQRankSum-12.5" \
 --filter-expression "ReadPosRankSum < -8.0" --filter-name "ReadPosRankSum-8"
+
+# QUAL: phred
+# QD (QualByDepth): normalized QUAL by the read depth (DP)
+# SOR (StrandOddRatio): strand bias estimated by the symmetric odds ratio test
+# FS (FisherStrand)
+# MQ (RMSMappingQuality): root mean square mapping quality over all the reads at the site
+# MQRankSum (MappingQualityRankSumTest): negative means mapping qualites of the reference allele are higher than those supporting the alternate allele.
+# ReadPosRankSumTest: negative value indicates that the alternate allele is foundd at the ends of reads more often than the reference allele.
+# See: https://gatk.broadinstitute.org/hc/en-us/articles/360035890471-Hard-filtering-germline-short-variants

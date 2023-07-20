@@ -36,6 +36,12 @@ echo "start first-pass"
 --outSAMtype None \
 --outSAMmode None
 
+# towpass1readsN: the number of reads to be mapped in the 1st pass
+# outSAMattributes: MD tag = String encoding mismatched and deleted reference baases
+# outSAMstrandField: intronMotif = infer strand from known intron motifs
+# outSAMunmapped: Within = output unmapped reads within the main SAM file
+# outSAM: output SAM? (we do not need to write the results in the fisrt pass)
+
 #mkdir SRR12285189_SUDHL4_D2_Genome_Basic_Index
 ## make second index
 echo "generate second index"
